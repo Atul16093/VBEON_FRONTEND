@@ -85,7 +85,7 @@ const fetchData = async ()=>{
                 checked={selectedMembers.includes(member)}
                 onChange={() => handleCheckboxChange(member)}
               />
-              {member.role != "admin" ? <div> <img src={`http://localhost:5400${member.user.profilePic}`} alt={member.name} className="avatar" /> {member.user.username}</div>: ""}
+              {member.role != "admin" ? <div> <img src={`https://vbeon-backend.onrender.com${member.user.profilePic}`} alt={member.name} className="avatar" /> {member.user.username}</div>: ""}
             </label>
           ))}
         </div>

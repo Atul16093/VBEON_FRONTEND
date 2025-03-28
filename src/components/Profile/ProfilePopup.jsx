@@ -30,7 +30,7 @@ useEffect(()=>{},[])
     setEditPopup(!editPopup);
     sendEditToParent(editPopup);
   }
-  let url = `http://localhost:5400${userData.profilePic}`
+  let url = `https://vbeon-backend.onrender.com${userData.profilePic}`
   const dispatch = useDispatch();
   //Handling logout here 
   const handleLogout = ()=>{
@@ -51,7 +51,7 @@ useEffect(()=>{},[])
   
       try {
         const response = await axios.post(
-          `${"http://localhost:5400/user/upload-avatar/"}${sendToChild.user.id}`,
+          `${"https://vbeon-backend.onrender.com/user/upload-avatar/"}${sendToChild.user.id}`,
           formData,
           {
             headers: {
