@@ -1,0 +1,153 @@
+.glass-bg {
+    width: 100vw;
+    height: 100vh;
+
+    background: radial-gradient(circle at 20% 50%, #11172b, #2c2541, #141e30);
+    background-image: url("../../assets/EmoBackground.svg");
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .glass-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 82%;
+    max-height: 600px;
+  
+
+    background: rgba(255, 255, 255, 0.02); 
+    backdrop-filter: blur(2px);        
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+
+  .glass-header {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .glass-header h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .info{
+    background: linear-gradient(to right, #a855f7, #3b82f6);
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .signup-btn {
+    background: linear-gradient(to right, #a855f7, #3b82f6);
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .signup-btn:hover {
+    opacity: 0.8;
+  }
+  
+
+  .glass-content {
+    flex: 1;
+    overflow-y: auto;  
+    margin-bottom: 75px;
+    padding-right: 10px;
+  }
+  
+ 
+  .assistant-bubble {
+    background: rgba(59, 130, 246, 0.25); 
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    max-width: 60%;
+  }
+  
+
+  .assistant-bubble.user {
+    background: rgba(255, 255, 255, 0.15);
+    margin-left: auto; 
+  }
+  
+
+  .message-input {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.42);
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 28px;
+    width: 97%;
+    bottom: 15px;
+  }
+  
+  .message-input input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .message-input input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+ 
+  .send-btn {
+    background: linear-gradient(to right, #a855f7, #3b82f6);
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  .send-btn:hover {
+    opacity: 0.8;
+  }
+  
+
+  .glass-content::-webkit-scrollbar {
+    width: 6px;
+  }
+  .glass-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+  }
+  

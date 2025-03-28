@@ -1,0 +1,211 @@
+
+/* Dark overlay behind the modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* Modal Container */
+  .modal-container {
+    background-color: #36393f; /* Discord-like dark background */
+    color: #dcddde;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Header */
+  .modal-container h2 {
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  /* Subheading (e.g., "in Text Channels") */
+  .subheading {
+    margin-bottom: 20px;
+    color: #b9bbbe;
+    font-size: 14px;
+  }
+  
+  /* Channel Type Section */
+  .channel-type-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Each label holds a radio + info */
+  .channel-type-section label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  /* Align radio button at the top */
+  .channel-type-section input[type="radio"] {
+    margin-top: 6px;
+  }
+  
+  /* Channel type info (Text/Voice) */
+  .channel-type-info h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+  }
+  .channel-type-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #b9bbbe;
+  }
+  
+  /* Input Section */
+  .input-section {
+    margin-bottom: 20px;
+  }
+  .input-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Channel name input with # prefix */
+  .channel-name-input {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .channel-name-input span {
+    padding: 0 8px;
+    color: #000000;
+    font-size: 16px;
+  }
+  .channel-name-input input {
+    border: none;
+    background: none;
+    color: #000000;
+    padding: 8px;
+    outline: none;
+    width: 100%;
+  }
+  
+  .private-channel-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #2b2d31; /* Dark theme background */
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .lock-icon {
+    font-size: 16px;
+  }
+  
+  .label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .toggle-button {
+    width: 40px;
+    height: 22px;
+    left: 125px;
+    background: #888;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+  }
+  
+  .toggle-button .toggle-circle {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    position: absolute;
+    left: 3px;
+  }
+  
+  .toggle-button.active {
+    background: #3ba55d; /* Green when active */
+  }
+  
+  .toggle-button.active .toggle-circle {
+    transform: translateX(18px);
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+  
+  
+  /* Modal Actions (buttons) */
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  /* Cancel & Create Buttons */
+  .cancel-btn,
+  .create-btn {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  /* Cancel Button */
+  .cancel-btn {
+    background-color: #4f545c;
+    color: #fff;
+  }
+  .cancel-btn:hover {
+    background-color: #42464d;
+  }
+  
+  /* Create Button */
+  .create-btn {
+    background-color: #5865f2;
+    outline: none;
+    color: #fff;
+  }
+  .create-btn:hover {
+    background-color: #4752c4;
+  }
+
+  .adminBtn{
+    left : 80px
+  }
+  
+  

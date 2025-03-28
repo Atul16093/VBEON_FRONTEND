@@ -1,0 +1,137 @@
+/* CreateServerModal.css */
+
+/* Modal Background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* Modal Container */
+  .modal-container {
+    width: 400px;
+    background-color: #2f3136;
+    color: #dcddde;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: "Arial", sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Modal Title */
+  .modal-container h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Modal Description */
+  .modal-description {
+    font-size: 14px;
+    text-align: center;
+    color: #b9bbbe;
+    margin-bottom: 10px;
+  }
+  
+  /* Options */
+  .option {
+    display: flex;
+    align-items: center;
+    background: #3a3d42;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .option:hover {
+    background: #4f545c;
+  }
+  
+  .option .icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  /* "Create My Own" Option */
+  .create-own {
+    background: #4f545c;
+    font-weight: bold;
+  }
+  
+  .create-own:hover {
+    background: #5a5e66;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #b9bbbe;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  
+  /* Join Server Section */
+  .join-server {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .join-server p {
+    font-size: 14px;
+    color: #b9bbbe;
+  }
+  
+  .join-btn {
+    width: 100%;
+    background: #5865f2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .join-btn:hover {
+    background: #4752c4;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #b9bbbe;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .modal-container {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

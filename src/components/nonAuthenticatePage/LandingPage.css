@@ -1,0 +1,210 @@
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-container {
+  background: url("../../assets/Landingpage1.svg") ;
+  background-size: cover;
+  background-position: center bottom -10px;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0;
+}
+
+ul {
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.signup {
+  font-weight: bold;
+  color: #ff4d6d;
+}
+
+
+.hero-section {
+  margin-top: 95px;
+}
+
+.glow-button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: white;
+  background: transparent;
+  border: 2px solid ;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.glow-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  border : 2px solid;
+  background: linear-gradient(45deg, #a855f7, #3b82f6, #a855f7, #3b82f6);
+  background-size: 400%;
+  z-index: 1;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.glow-button:hover::before {
+  opacity: 1;
+  animation: glowBorder 2s linear infinite;
+}
+.increase-index{
+  position: relative;
+  z-index: 2;
+}
+@keyframes glowBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.floating-robot {
+  width: 200px;
+  position: absolute;
+  bottom: 55px;
+  left: 770px;
+  transform: translateX(-50%);
+  animation: floatAnimation 3s infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+footer {
+  margin-top: 312px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+
+.hamburger {
+  display: none; 
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    background: url("../../assets/Landingpage2.svg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+  }
+
+
+  .hamburger {
+    display: flex;
+    margin-top: 10px;
+  }
+
+ 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero-section {
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .glow-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .floating-robot {
+    width: 100px;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+  }
+
+  footer {
+    margin-top: 150px;
+    text-align: center;
+  }
+}

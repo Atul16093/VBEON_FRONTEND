@@ -1,0 +1,94 @@
+/* Overlay Background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Pop-up Container */
+.invite-popup {
+    background: #2f3136;
+    color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popupFadeIn 0.3s forwards;
+}
+
+/* Pop-up Animation */
+@keyframes popupFadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Invite Link Container */
+.invite-link-container {
+    display: flex;
+    background: #202225;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.invite-link-container input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.copy-btn {
+    background: #5865f2;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.copy-btn:hover {
+    background: #4752c4;
+}
+
+/* Edit Link */
+.edit-link {
+    font-size: 12px;
+    color: #888;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.edit-link:hover {
+    color: #ccc;
+}

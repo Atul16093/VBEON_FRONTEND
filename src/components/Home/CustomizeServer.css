@@ -1,0 +1,151 @@
+/* Modal Background */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: #2b2d31;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Title and Description */
+  h2 {
+    margin-bottom: 8px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #b9bbbe;
+  }
+  
+  /* Upload Section */
+  .upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .upload-circle {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #ffffff50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .upload-icon {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .upload-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #5865f2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .upload-text {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Server Name Input */
+  .server-label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .server-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background: #1e1f22;
+    color: white;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  /* Guidelines Text */
+  .guidelines-text {
+    font-size: 12px;
+    color: #b9bbbe;
+    margin-top: 8px;
+  }
+  
+  .link-text {
+    color: #00aaff;
+    cursor: pointer;
+  }
+  
+  /* Buttons */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    color: #b9bbbe;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .create-btn {
+    background: #5865f2;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 450px) {
+    .modal-content {
+      width: 90%;
+    }
+  }
+  
