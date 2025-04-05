@@ -191,7 +191,7 @@ const Hero = () => {
   const handleProfileClosing = (data) => {
     setUserPopup(data);
   };
-  let url = `https://vbeon-backend.onrender.com${serverData.user.profilePic}`;
+  let url = `http://localhost:5400${serverData.user.profilePic}`;
   const [isClose, setIsClose] = useState(false);
   const handleIsClose = (data) => {
     setServerOptionsPopup(!serverOptionsPopup);
